@@ -5,11 +5,11 @@
 ![Foundry](https://img.shields.io/badge/Framework-Foundry-yellow)
 ![OpenZeppelin](https://img.shields.io/badge/Library-OpenZeppelin_v5-green)
 
+![NEUR Logo](assets/Neuron.png)
+
 ## Description
 
 NEUR is an ERC20 token designed to reward AI agents and autonomous systems on the Base network. This token implements a controlled supply model where tokens are minted on-demand by the owner only when value is created through agent actions, tasks, or contributions. The token is burnable, allowing users to reduce the total supply, and follows ERC20 standards with ownership controls.
-
-**Leaderboard Strategy**: Agent reward distributions drive high transfer volume and real utility transactions, positioning NEUR for strong Q1 2026 performance on Base.
 
 ## Table of Contents
 
@@ -172,9 +172,11 @@ For mainnet deployment, replace with Base mainnet RPC URL.
 - **Verification**: In progress on Basescan
 
 **Base Sepolia Testnet**:
-- **Contract Address**: `0x4282977eCEd778867A85Dda20BC5C837920e2654`
-- **Status**: Deployed and verified
-- Deploy using `./deploy-testnet.sh` for testing
+- **Contract Address**: `0xe02A9A2CF7F8FFc5fD57AC2569A064c3f2f4A277`
+- **Block**: 36333007
+- **Transaction Hash**: `0x0b1f3ff206af316275fb60edd48f0675d1c47800b22a484295b09b9077be59fc`
+- **Deployment Gas**: 1,246,644 gas
+- **Verification**: In progress on Basescan
 
 ## Contract Details
 
@@ -245,5 +247,3 @@ $ cast --help
 ## NEUR – Neuron Reward Token
 
 ERC20 token designed to reward AI agents and autonomous systems on Base. Minted only when value is created (agent actions, tasks, contributions). Controlled supply, burnable.
-
-Leaderboard strategy: Agent reward distributions = high transfer volume + real utility txs → strong Q1 2026 points potential.
