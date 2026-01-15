@@ -84,19 +84,19 @@ flowchart LR
 
     subgraph Minting
         F["Owner Calls mint(to, amount)"] --> G[Increase totalSupply]
-        G --> H[Increase balanceOf[to]]
+        G --> H["Increase balanceOf[to]"]
         H --> I["Emit Transfer(0x0, to, amount)"]
     end
 
     subgraph Burning
         J["User Calls burn(amount)"] --> K[Decrease totalSupply]
-        K --> L[Decrease balanceOf[msg.sender]]
+        K --> L["Decrease balanceOf[msg.sender]"]
         L --> M["Emit Transfer(msg.sender, 0x0, amount)"]
     end
 
     subgraph Transfer
-        N["User Calls transfer(to, amount)"] --> O[Decrease balanceOf[from]]
-        O --> P[Increase balanceOf[to]]
+        N["User Calls transfer(to, amount)"] --> O["Decrease balanceOf[from]"]
+        O --> P["Increase balanceOf[to]"]
         P --> Q["Emit Transfer(from, to, amount)"]
     end
 ```
